@@ -136,7 +136,7 @@ header nav ul li a:hover {
 .about {
   padding: var(--padding);
   text-align: center;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-right: 20px;
   position: relative;
 }
@@ -148,11 +148,11 @@ header nav ul li a:hover {
   left: calc(50% - 50px);
 }
 
-/* .about .about-intro {
-  padding-right: 130px;
-} */
+ .about .about-intro {
+  padding-right: 30px;
+}
 
-.about article {
+ .about article {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
