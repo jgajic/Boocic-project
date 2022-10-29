@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #fc4311;
+  --black: #000;
+  --white: #fff;
+  --textColor1: #ccc;
+  --textColor2: #3d3c3c;
+  --padding: 30px 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: bold;
+  padding: 40px 0;
+}
+
+h2 {
+  color: var(--black);
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 36px;
+  padding-bottom: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  font-size: 17px;
+  color: var(--textColor2);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.dugme {
+  text-transform: uppercase;
+  background: var(--primary);
+  padding: 12px 40px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--white);
+  margin-top: 40px;
+  transition: ease-in all 0.5s;
+}
+
+.dugme:hover {
+  background: var(--white);
+  color: var(--primary);
+  border-radius: 25%;
+  transition: ease-in all 0.5s;
+}
+
+/****************
+    Header
+****************/
+header {
+  background-color: var(--primary);
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+  line-height: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 30px;
+}
+
+header nav ul li a:hover {
+  color: var(--black);
+}
+
+/****************
+    Hero
+****************/
+.hero {
+  background-image: url(img/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: var(--padding);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.hero p {
+  color: var(--white);
+}
+
+/**************
+  About
+**************/
+.about {
+  padding: var(--padding);
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.about .ikonicaNaDole {
+  position: absolute;
+  width: 100px;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.about .about-intro {
+  padding-right: 130px;
+}
+
+.about article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.about article div {
+  flex: 0 0 49%;
+}
+
+.about article .about-tekst {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about .dugme {
+  background: var(--black);
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.about .dugme:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+hr {
+  margin: 15px auto 25px;
+  width: 30%;
+  height: 1px;
+  border: none;
+  background-color: var(--primary);
+}
+
+/**************
+  Screenshot
+**************/
+.screenshot {
+  padding: var(--padding);
+  text-align: center;
+}
+
+.screenshot p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.screenshot article {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.screenshot article .screenshot-levo-dugme,
+.screenshot article .screenshot-desno-dugme {
+  flex: 0 0 10%;
+}
+
+.screenshot article .screenshot-levo-dugme span,
+.screenshot article .screenshot-desno-dugme span {
+  border: 1px solid red;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px 25px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.screenshot article .screenshot-levo-dugme span:hover,
+.screenshot article .screenshot-desno-dugme span:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.screenshot article .screenshot-slika {
+  flex: 0 0 80%;
+}
+
+.screenshot a {
+  background-color: var(--black);
+}
+
+.screenshot a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/**************
+  Services
+**************/
+.services {
+  padding: var(--padding);
+  text-align: center;
+  background-color: var(--textColor1);
+}
+
+.services h2 {
+  color: var(--primary);
+}
+
+.services article {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services article .services-slika {
+  flex: 0 0 30%;
+  margin-bottom: 30px;
+}
+
+.services article .services-slika img {
+  border-radius: 30px;
+}
+
+/**************
+ Blog
+**************/
+.blog {
+  padding: var(--padding);
+  text-align: center;
+}
+
+.blog .blog-postovi {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.blog .blog-postovi article {
+  margin-bottom: 30px;
+  text-align: left;
+  flex: 0 0 48%;
+}
+
+.blog .blog-postovi article p {
+  font-weight: 300;
+}
+
+.blog .blog-postovi article .blog-slika {
+  position: relative;
+}
+
+.blog .blog-postovi article .blog-slika .blog-slika-datum {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 10px 20px;
+}
+
+.blog .blog-postovi article .blog-meta {
+  display: flex;
+}
+
+.blog .blog-postovi article .blog-meta p span {
+  color: var(--primary);
+}
+
+.blog .blog-postovi article .blog-meta p:nth-child(2) {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.blog .blog-postovi article .blog-tekst h4 {
+  margin: 15px 0;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.blog h2 {
+  color: black;
+  color: var(--primary);
+}
+
+/**************
+  Forma
+**************/
+.forma {
+  text-align: center;
+  background-color: var(--textColor2);
+  padding: var(--padding);
+}
+
+.forma h2 {
+  color: var(--white);
+}
+
+.forma hr {
+  background-color: var(--white);
+  margin-bottom: 50px;
+}
+
+.forma form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  padding: 30px;
+  background-color: var(--white);
+}
+
+.forma input,
+.forma textarea {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 3px solid var(--textColor1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.forma form input[type='submit'] {
+  background-color: var(--black);
+  width: 50%;
+  margin: auto;
+}
+
+.forma form input[type='submit']:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/*************
+  Footer
+*************/
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer article {
+  flex: 0 0 23%;
+}
+
+footer article h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+footer article .icon {
+  display: flex;
+  align-items: center;
+}
+
+footer article img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+footer .social img {
+  width: 25px;
+}
+
+footer .social .icon i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+/*************
+  Responsive
+*************/
+@media screen and (max-width: 768px) {
+  header {
+    display: grid;
+    justify-content: center;
+  }
+
+  header a {
+    justify-self: center;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    padding-bottom: 100px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+  .about {
+    padding: 100px 20px 50px;
+  }
+  .about article {
+    flex-direction: column-reverse;
+  }
+  .about .about-intro {
+    padding-right: 0;
+  }
+  .about article .about-slika img {
+    border-radius: 0 25px 25px 0;
+  }
+  .about article .about-tekst h3 {
+    margin-top: 30px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .about article .about-tekst p {
+    text-align: justify;
+  }
+  .screenshot article .screenshot-slika {
+    flex: 0 0 100%;
+  }
+  .screenshot article .screenshot-levo-dugme,
+  .screenshot article .screenshot-desno-dugme {
+    order: 1;
+  }
+  .screenshot article .screenshot-levo-dugme span,
+  .screenshot article .screenshot-desno-dugme span {
+    padding: 10px 35px;
+    margin: 0 10px;
+  }
+  .screenshot article {
+    margin-bottom: 50px;
+  }
+  .services article .services-slika {
+    flex: 0 0 48%;
+  }
+  .blog .blog-postovi article {
+    flex: 0 0 100%;
+    text-align: left;
+  }
+  .forma form {
+    width: 80%;
+  }
+  footer article {
+    flex: 0 0 50%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  footer article .icon {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+  header nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  header nav ul li {
+    margin: 20px 15px 0;
+  }
+  .hero {
+    padding-bottom: 100px;
+  }
+  .services article .services-slika {
+    flex: 0 0 100%;
+  }
+  .blog .blog-postovi article .blog-meta {
+    display: block;
+  }
+  .blog .blog-postovi article .blog-meta p:nth-child(2),
+  .blog .blog-postovi article .blog-meta p:nth-child(3) {
+    display: inline;
+  }
+  .blog .blog-postovi article {
+    background-color: lightgray;
+    padding: 10px;
+  }
+  .forma form {
+    width: 100%;
+  }
+  footer article {
+    flex: 0 0 100%;
+  }
+}
